@@ -23,7 +23,7 @@ if __name__ == "__main__":
     for k, g in itertools.groupby(kva, key=operator.itemgetter('name')):
         groups.append(list(g))
         uniquekeys.append(k)
-
+        
     i = 0
     def f(x):
         return tuple([len(groups[x]), groups[x][0]['name']])
